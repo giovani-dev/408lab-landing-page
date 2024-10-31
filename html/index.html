@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://wurfl.io/wurfl.js"></script>
+
+    <script>
+        function importarCSS(url) {
+            const link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = url;
+            link.type = "text/css";
+            document.head.appendChild(link);
+        }
+
+        // adicionar o import css especifico para um smartphone ou desktop
+        if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+            // import para smartphone
+            importarCSS("./../css/mobile/teste.css");
+        } else {
+            // import para desktop
+            importarCSS("./../css/desktop/teste.css")
+        }
+
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>408 Lab</title>
+</head>
+
+<body>
+
+    <div id="teste"></div>
+
+</body>
+
+</html>
