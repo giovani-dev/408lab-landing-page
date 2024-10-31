@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
 }
 
@@ -13,7 +13,8 @@
     height: 15%;
 
 }
- #FraseEsquerda {
+
+#FraseEsquerda {
     color: #452982;
     padding: 3px;
     margin: 5px;
@@ -27,6 +28,7 @@
     align-items: center;
     font-size: 32px;
 }
+
 #FraseDireita {
     color: #452982;
     padding: 3px;
