@@ -18,3 +18,21 @@ main {
     font-style: normal;
     color: var(--color-text-primary);
 }
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--color-primary);
+}
+
+.visible {
+    opacity: 1;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity 1s ease;
+}
