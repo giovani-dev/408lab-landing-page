@@ -1,0 +1,63 @@
+@import url("./css/const.css");
+
+* {
+    margin: 0;
+}
+
+.Menu {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-primary);
+    align-items: center;
+}
+
+.Menu img {
+    padding: 8px;
+    width: 49%;
+    object-fit: scale-down;
+}
+
+#checkbox-menu {
+    display: none;
+}
+
+
+#checkbox-menu:checked + label #sandwich-menu {
+    transform: rotate(90deg);
+}
+
+
+.menu-links {
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    top: 10px;
+}
+
+
+#checkbox-menu:checked ~ .menu-links {
+    display: block;
+    max-height: 150px;
+    opacity: 1;
+}
+
+
+.menu-links a {
+    display: block;
+    padding: 10px 0;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+    color: var(--color-secondary);
+}
