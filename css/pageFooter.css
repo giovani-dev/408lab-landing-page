@@ -30,8 +30,8 @@ footer img {
 
 #social-media svg {
     fill: var(--color-text-primary);
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 #adress {
