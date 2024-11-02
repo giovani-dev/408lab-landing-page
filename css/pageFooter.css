@@ -8,7 +8,7 @@ footer {
     justify-content: space-evenly;
 }
 
-footer img {
+footer #foo_logo {
     object-fit: scale-down;
     /* height: 15%; */
     width: 49%;
@@ -28,8 +28,7 @@ footer img {
     width: 49%;
 }
 
-#social-media svg {
-    fill: var(--color-text-primary);
+#social-media img {
     width: 32px;
     height: 32px;
 }
