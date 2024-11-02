@@ -16,10 +16,10 @@
         // adicionar o import css especifico para um smartphone ou desktop
         if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
             // import para smartphone
-            importarCSS("./../css/mobile/teste.css");
+            // importarCSS("./../css/mobile/teste.css");
         } else {
             // import para desktop
-            importarCSS("./../css/desktop/teste.css")
+            // importarCSS("./../css/desktop/teste.css")
         }
 
     </script>
@@ -40,6 +40,12 @@
 </head>
 
 <body>
+    <a id="go-back-btn" class="clear invisible" href="#">
+        <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="14.3536" y1="1.35355" x2="0.353553" y2="15.3536" stroke="#452982" />
+            <line x1="14.3536" y1="0.646447" x2="28.3536" y2="14.6464" stroke="#452982" />
+        </svg>
+    </a>
 
     <header></header>
 
@@ -70,6 +76,29 @@
         </div>
         <span id="adress" class="default-font">Rua Udo Schadrack, n° 100, Progresso, Blumenau, SC</span>
     </footer>
+
+    <script>
+        const goBackBTN = document.getElementById("go-back-btn");
+
+        if (WURFL.is_mobile === true && WURFL.form_factor === "Smartphone") {
+            goBackBTN.classList.add("margin-mobile")
+        } else {
+            goBackBTN.classList.add("margin-desktop")
+        }
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY >= window.innerHeight * 0.2) {
+                goBackBTN.classList.remove("invisible")
+                goBackBTN.classList.add("visible")
+                if (!goBackBTN.classList.contains("fade")) {
+                    goBackBTN.classList.add("fade")
+                }
+            } else {
+                goBackBTN.classList.remove("visible")
+                goBackBTN.classList.add("invisible")
+            }
+        })
+    </script>
 
 </body>
 

@@ -1,0 +1,25 @@
+@import url("./../css/const.css");
+
+
+#go-back-btn {
+    width: 58px;
+    height: 58px;
+    background-color: var(--color-secondary);
+    border-radius: 58px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-desktop {
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.margin-mobile {
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
