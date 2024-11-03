@@ -1,63 +1,100 @@
-@import url("./css/const.css");
+@import url("./../css/const.css");
 
-* {
-    margin: 0;
+#menu-mobile {
+    margin-right: 5%;
 }
 
-.Menu {
-    position: sticky;
+#menu-desktop {
+    margin-right: 5%;
+}
+
+#menu-click-control {
+    display: none;
+}
+
+#menu {
+    position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     background-color: var(--color-primary);
+    width: 100%;
+    height: 5%;
+    min-height: 100px;
+    z-index: 10;
+}
+
+#menu img {
+    height: 35px;
+    object-fit: contain;
+    margin-left: 5%;
+}
+
+.line {
+    width: 100%;
+    border: 2px var(--color-tertiary) solid;
+    border-radius: 3px;
+    transition: width 500ms;
+}
+
+.menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.Menu img {
-    padding: 8px;
-    width: 49%;
-    object-fit: scale-down;
+.menu-btn:hover .line {
+    width: 125%;
 }
 
-#checkbox-menu {
-    display: none;
+@media (orientation: portrait) {
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-mobile label {
+        cursor: pointer;
+    }
+
+    #menu-content {
+        background-color: var(--color-primary);
+        width: 100%;
+        height: calc(100vh - 100px);
+        top: 100px;
+        left: 0;
+        z-index: 5;
+        position: fixed;
+        transform: translateY(100%);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 1s ease, transform 1s ease;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu-click-control:checked~#menu-content {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
 }
 
+@media (orientation: landscape) {
+    #menu-mobile {
+        display: none;
+    }
 
-#checkbox-menu:checked + label #sandwich-menu {
-    transform: rotate(90deg);
-}
+    #menu-desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-wrap: nowrap;
+        text-align: end;
+    }
 
-
-.menu-links {
-    display: none;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    position: relative;
-    top: 10px;
-}
-
-
-#checkbox-menu:checked ~ .menu-links {
-    display: block;
-    max-height: 150px;
-    opacity: 1;
-}
-
-
-.menu-links a {
-    display: block;
-    padding: 10px 0;
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.menu-links a:hover {
-    color: var(--color-secondary);
 }
