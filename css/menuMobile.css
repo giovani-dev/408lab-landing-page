@@ -12,6 +12,10 @@
     display: none;
 }
 
+header {
+    overflow: hidden
+}
+
 #menu {
     position: fixed;
     display: flex;
@@ -64,7 +68,7 @@
         height: calc(100vh - 100px);
         top: 100px;
         left: 0;
-        z-index: 5;
+        /* z-index: 5; */
         position: fixed;
         transform: translateY(100%);
         pointer-events: none;

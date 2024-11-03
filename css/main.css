@@ -1,0 +1,18 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+} */
+
+#home,
+#sobre-nos,
+#cases-sucesso {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+}
+
+/* #home {
+    margin-top: 100px;
+} */

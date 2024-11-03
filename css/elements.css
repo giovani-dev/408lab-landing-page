@@ -7,11 +7,12 @@
     background-color: var(--color-secondary);
     border-radius: 58px;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .margin-desktop {

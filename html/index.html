@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./../css/default.css" />
     <link rel="stylesheet" type="text/css" href="./../css/elements.css" />
     <link rel="stylesheet" href="./../css/menuMobile.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
 
@@ -75,7 +76,7 @@
                     Sobre Nós
                     <div class="line"></div>
                 </a>
-                <a href="#pre-incubacao" class="menu-btn">
+                <a href="#cases-sucesso" class="menu-btn">
                     Cases de sucesso
                     <div class="line"></div>
                 </a>
@@ -83,10 +84,11 @@
         </nav>
     </header>
 
-    <main>
-
-    </main>
-
+    <div id="home">
+        <span>Imagina contar com uma consultoria que transforma suas ideias em realidade</span>
+    </div>
+    <div id="sobre-nos">sobre-nos</div>
+    <div id="cases-sucesso">cases-sucesso</div>
     <footer>
         <img src="../assets/images/LOGO_2.png" alt="408lab logo">
         <div id="links">
@@ -111,9 +113,15 @@
         <span id="adress" class="default-font small-font">Rua Udo Schadrack, n° 100, Progresso, Blumenau, SC</span>
     </footer>
 
+
     <script>
         const goBackBTN = document.getElementById("go-back-btn");
-        const menuMobile = document.getElementById("menu-mobile")
+        const menuMobile = document.getElementById("menu-mobile");
+        const menu = document.getElementById("menu")
+        const home = document.getElementById("home")
+
+
+        home.style.marginTop = menu.clientHeight + "px"
 
         document.querySelectorAll("#menu-content a").forEach(link => {
             link.addEventListener("click", () => {
@@ -121,17 +129,16 @@
             });
         });
 
-
         window.addEventListener("scroll", () => {
-            if (window.scrollY >= window.innerHeight * 0.2) {
-                goBackBTN.classList.remove("invisible")
-                goBackBTN.classList.add("visible")
+            if (window.scrollY >= window.innerHeight * 0.1) {
+                goBackBTN.classList.remove("invisible");
+                goBackBTN.classList.add("visible");
                 if (!goBackBTN.classList.contains("fade")) {
-                    goBackBTN.classList.add("fade")
+                    goBackBTN.classList.add("fade");
                 }
             } else {
-                goBackBTN.classList.remove("visible")
-                goBackBTN.classList.add("invisible")
+                goBackBTN.classList.remove("visible");
+                goBackBTN.classList.add("invisible");
             }
         })
     </script>
