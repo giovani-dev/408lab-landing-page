@@ -18,3 +18,34 @@ main {
     font-style: normal;
     color: var(--color-text-primary);
 }
+
+.small-font {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.medium-font {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.large-font {
+    font-weight: 600;
+    font-size: 42px;
+}
+
+.top-space {
+    margin-top: 5%;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity 1s ease;
+}
