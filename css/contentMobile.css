@@ -113,6 +113,7 @@
 #cases-sucesso .cases {
   display: flex;
   flex-direction: row;
+  overflow-y: auto;
 }
 
 
