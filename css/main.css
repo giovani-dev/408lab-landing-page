@@ -4,13 +4,22 @@
 } */
 
 #home,
-#sobre-nos,
-#cases-sucesso {
+#sobre-nos {
     height: 100%;
-    width: 100%;
     position: relative;
 }
 
 #home {
     display: block;
+}
+
+/* #cases-sucesso {
+    height: auto;
+} */
+
+@media (orientation: portrait) {
+    #sobre-nos {
+        height: auto;
+    }
+
 }
