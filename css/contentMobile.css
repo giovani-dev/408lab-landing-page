@@ -14,16 +14,16 @@
   color: var(--color-tertiary);
 }
 
-#sobre_nos {
+/* #sobre-nos {
   margin-top: 70px;
   padding: 20px;
 }
 
-#sobre_nos .cards {
-  background-image: url(../assets/images/fundo_sobre_nos.png);
+#sobre-nos .cards {
+  background-image: url(../assets/svg/fundo_sobre_nos.svg);
 }
 
-#sobre_nos h2 {
+#sobre-nos h2 {
   color: var(--color-primary);
   text-align: right;
   font-size: 36px;
@@ -31,7 +31,7 @@
   margin-bottom: 17px;
 }
 
-#sobre_nos .card {
+#sobre-nos .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +47,86 @@
   color: var(--color-tertiary);
 }
 
-#sobre_nos :nth-child(n+2) {
+#sobre-nos :nth-child(n+2) {
   margin-top: 30px;
+} */
+
+#cards {
+  background-image: url(../assets/svg/fundo_sobre_nos.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#sobre-nos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+}
+
+#sobre-nos h2 {
+  color: var(--color-text-tertiary);
+  width: 90%;
+}
+
+.card {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  color: var(--color-tertiary);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (orientation: portrait) {
+
+  #sobre-nos :nth-child(n+2) {
+    margin-top: 30px;
+  }
+
+  #sobre-nos h2 {
+    text-align: right;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    height: 5%;
+    min-height: 127px;
+    width: 90%;
+  }
+}
+
+@media (orientation: landscape) {
+  #sobre-nos h2 {
+    text-align: center;
+  }
+
+  .card {
+    width: 28%;
+    min-width: 200px;
+    height: 25%;
+    min-height: 300px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
 }
