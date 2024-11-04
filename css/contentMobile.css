@@ -14,43 +14,6 @@
   color: var(--color-tertiary);
 }
 
-/* #sobre-nos {
-  margin-top: 70px;
-  padding: 20px;
-}
-
-#sobre-nos .cards {
-  background-image: url(../assets/svg/fundo_sobre_nos.svg);
-}
-
-#sobre-nos h2 {
-  color: var(--color-primary);
-  text-align: right;
-  font-size: 36px;
-
-  margin-bottom: 17px;
-}
-
-#sobre-nos .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  padding: 30px 15px;
-
-  background-color: var(--color-primary);
-  border-radius: 6px;
-
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-
-  color: var(--color-tertiary);
-}
-
-#sobre-nos :nth-child(n+2) {
-  margin-top: 30px;
-} */
-
 #cards {
   background-image: url(../assets/svg/fundo_sobre_nos.svg);
   background-repeat: no-repeat;
