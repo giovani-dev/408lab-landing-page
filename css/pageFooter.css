@@ -6,11 +6,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    height: 400px;
 }
 
 footer img {
     object-fit: scale-down;
-    /* height: 15%; */
     width: 49%;
 }
 
@@ -36,4 +37,23 @@ footer img {
 #adress {
     text-align: center;
     width: 49%;
+}
+
+
+@media (orientation: landscape) {
+    footer img {
+        width: 20%;
+    }
+    
+    #links {
+        width: 20%;
+    }
+    
+    #social-media {
+        width: 20%;
+    }
+    
+    #adress {
+        width: 20%;
+    }
 }
