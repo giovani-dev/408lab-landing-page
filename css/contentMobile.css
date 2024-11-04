@@ -20,6 +20,7 @@
   background-size: cover;
   width: 100%;
   height: 100%;
+  overflow: auto;
 }
 
 #sobre-nos {
@@ -29,10 +30,14 @@
   justify-content: baseline;
 }
 
-#sobre-nos h2 {
+#sobre-nos-title h2 {
   color: var(--color-text-tertiary);
-  width: 90%;
+  /* width: 90%; */
 }
+
+/* #sobre-nos-title {
+  width: 100%;
+} */
 
 .card {
   background-color: var(--color-primary);
@@ -51,7 +56,7 @@
     margin-top: 30px;
   }
 
-  #sobre-nos h2 {
+  #sobre-nos-title {
     text-align: right;
   }
 
@@ -70,7 +75,7 @@
 }
 
 @media (orientation: landscape) {
-  #sobre-nos h2 {
+  #sobre-nos-title {
     text-align: center;
   }
 
@@ -94,32 +99,30 @@
   }
 }
 
-/* #sobre_nos :nth-child(n+2) {
-  margin-top: 30px;
-} */
-
-#cases_sucesso {
-  padding: 30px 20px;
-
+#cases-sucesso {
+  padding: 5% 5%;
   background-color: var(--color-secondary);
 }
 
-#cases_sucesso h2 {
+#cases-sucesso h2 {
   font-size: 36px;
   color: var(--color-primary);
   border-bottom: 1px dashed var(--color-primary);
 }
 
-#cases_sucesso .cases {
+#cases-sucesso .cases {
   display: flex;
   flex-direction: row;
-  overflow: scroll;
 }
 
-#cases_sucesso .cases .case {
+
+#cases-sucesso .cases .case {
   padding: 50px 35px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   min-width: 265px;
+  width: 15%;
+  height: 24%;
+  min-height: 422px;
 
   color: var(--color-tertiary);
 
@@ -128,16 +131,16 @@
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-#cases_sucesso .case:nth-child(n+2) {
+#cases-sucesso .case:nth-child(n+2) {
   margin-left: 10px;
 }
 
-#cases_sucesso .cases .case h3 {
+#cases-sucesso .cases .case h3 {
   text-align: center;
   font-size: 34px;
 }
 
-#cases_sucesso .cases .case p {
+#cases-sucesso .cases .case p {
   margin-top: 20px;
   padding-top: 10px;
 

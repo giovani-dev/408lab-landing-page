@@ -10,7 +10,6 @@ footer {
 
 footer img {
     object-fit: scale-down;
-    /* height: 15%; */
     width: 49%;
 }
 
@@ -36,4 +35,23 @@ footer img {
 #adress {
     text-align: center;
     width: 49%;
+}
+
+
+@media (orientation: landscape) {
+    footer img {
+        width: 20%;
+    }
+    
+    #links {
+        width: 20%;
+    }
+    
+    #social-media {
+        width: 20%;
+    }
+    
+    #adress {
+        width: 20%;
+    }
 }

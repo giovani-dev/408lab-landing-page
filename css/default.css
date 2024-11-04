@@ -47,3 +47,26 @@ main {
 .fade {
     transition: opacity 1s ease;
 }
+
+.page-title h2 {
+    color: var(--color-text-tertiary);
+    font-weight: 600;
+    font-size: 42px;
+}
+
+@media (orientation: portrait) {
+    .page-title {
+        text-align: right;
+        padding-right: 5%;
+    }
+}
+
+@media (orientation: landscape) {
+    .page-title {
+        text-align: center;
+    }
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
