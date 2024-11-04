@@ -1,0 +1,52 @@
+@import url(./const.css);
+
+.bg_home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+
+  background-image: url(../assets/images/fundo_home.jpg);
+  background-size: cover;
+
+  text-align: center;
+  color: var(--color-tertiary);
+}
+
+#sobre_nos {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+#sobre_nos .cards {
+  background-image: url(../assets/images/fundo_sobre_nos.png);
+}
+
+#sobre_nos h2 {
+  color: var(--color-primary);
+  text-align: right;
+  font-size: 36px;
+
+  margin-bottom: 17px;
+}
+
+#sobre_nos .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 15px;
+
+  background-color: var(--color-primary);
+  border-radius: 6px;
+
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+  color: var(--color-tertiary);
+}
+
+#sobre_nos :nth-child(n+2) {
+  margin-top: 30px;
+}
